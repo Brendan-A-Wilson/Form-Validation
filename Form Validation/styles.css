@@ -139,12 +139,17 @@ input {
     border-radius: 3px;
 }
 
+input:focus {
+    background-color: antiquewhite;
+}
+
 /*Button Styling*/
 
 .button-section {
     margin-top: 50px;
     margin-left: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #submit {
@@ -187,6 +192,12 @@ input {
     color: white;
 }
 
+#bk-btn-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /*Adjust the size of the container when the screen is reduced in size*/
 
 @media only screen and (max-width: 1300px) {
@@ -211,25 +222,25 @@ input {
     #container {
         width: 50%;
         position: relative;
-        left: 200px;
+        left: 230px;
         margin-bottom: 100px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     #container {
-        width: 50%;
+        width: 63%;
         position: relative;
-        left: 125px;
+        left: 85px;
         margin-bottom: 100px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
     #container {
-        width: 50%;
+        width: 65%;
         position: relative;
-        left: 116px;
+        left: 80px;
         margin-bottom: 100px;
     }
 }
@@ -246,5 +257,43 @@ input {
     #sub-container-right {
         width: 100%;
         margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        display: block;
+        width:50%;
+    }
+    #sub-container-left {
+        width: 50%;
+    }
+    #sub-container-right {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    #button-section {
+        display: block;
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .wrapper {
+        display: block;
+        width:50%;
+    }
+    #sub-container-left {
+        width: 50%;
+    }
+    #sub-container-right {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    #button-section {
+        display: block;
+        width:100%;
     }
 }
